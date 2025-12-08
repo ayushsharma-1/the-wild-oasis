@@ -1,0 +1,130 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "created_at": "2024-12-01T10:00:00.000Z",
+      "startDate": "2025-01-15",
+      "endDate": "2025-01-20",
+      "numNights": 5,
+      "numGuests": 2,
+      "totalPrice": 1250,
+      "status": "confirmed",
+      "cabinId": 1,
+      "guestId": 1
+    },
+    {
+      "id": 2,
+      "created_at": "2024-12-02T14:30:00.000Z",
+      "startDate": "2025-01-25",
+      "endDate": "2025-01-30",
+      "numNights": 5,
+      "numGuests": 2,
+      "totalPrice": 1625,
+      "status": "confirmed",
+      "cabinId": 2,
+      "guestId": 2
+    },
+    {
+      "id": 3,
+      "created_at": "2024-12-03T09:15:00.000Z",
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-07",
+      "numNights": 6,
+      "numGuests": 4,
+      "totalPrice": 1800,
+      "status": "confirmed",
+      "cabinId": 3,
+      "guestId": 3
+    },
+    {
+      "id": 4,
+      "created_at": "2024-12-04T16:45:00.000Z",
+      "startDate": "2025-02-10",
+      "endDate": "2025-02-17",
+      "numNights": 7,
+      "numGuests": 4,
+      "totalPrice": 3150,
+      "status": "confirmed",
+      "cabinId": 4,
+      "guestId": 4
+    },
+    {
+      "id": 5,
+      "created_at": "2024-12-05T11:20:00.000Z",
+      "startDate": "2025-02-20",
+      "endDate": "2025-02-26",
+      "numNights": 6,
+      "numGuests": 6,
+      "totalPrice": 2100,
+      "status": "confirmed",
+      "cabinId": 5,
+      "guestId": 5
+    },
+    {
+      "id": 6,
+      "created_at": "2024-12-06T13:00:00.000Z",
+      "startDate": "2025-03-01",
+      "endDate": "2025-03-08",
+      "numNights": 7,
+      "numGuests": 6,
+      "totalPrice": 4900,
+      "status": "confirmed",
+      "cabinId": 6,
+      "guestId": 6
+    },
+    {
+      "id": 7,
+      "created_at": "2024-12-07T15:30:00.000Z",
+      "startDate": "2025-03-10",
+      "endDate": "2025-03-17",
+      "numNights": 7,
+      "numGuests": 8,
+      "totalPrice": 3500,
+      "status": "confirmed",
+      "cabinId": 7,
+      "guestId": 7
+    },
+    {
+      "id": 8,
+      "created_at": "2024-12-08T10:00:00.000Z",
+      "startDate": "2025-12-20",
+      "endDate": "2025-12-30",
+      "numNights": 10,
+      "numGuests": 10,
+      "totalPrice": 14000,
+      "status": "confirmed",
+      "cabinId": 8,
+      "guestId": 8
+    },
+    {
+      "id": 9,
+      "created_at": "2024-12-08T12:00:00.000Z",
+      "startDate": "2025-12-10",
+      "endDate": "2025-12-15",
+      "numNights": 5,
+      "numGuests": 2,
+      "totalPrice": 1250,
+      "status": "checked-in",
+      "cabinId": 1,
+      "guestId": 9
+    },
+    {
+      "id": 10,
+      "created_at": "2024-12-01T08:00:00.000Z",
+      "startDate": "2025-12-25",
+      "endDate": "2026-01-05",
+      "numNights": 11,
+      "numGuests": 4,
+      "totalPrice": 3300,
+      "status": "confirmed",
+      "cabinId": 3,
+      "guestId": 10
+    }
+  ],
+  "settings": {
+    "minBookingLength": 3,
+    "maxBookingLength": 90,
+    "maxGuestsPerBooking": 10,
+    "breakfastPrice": 15
+  }
+}
