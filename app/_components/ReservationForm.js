@@ -5,14 +5,14 @@ import { useReservation } from "./ReservationContext";
 import { createBooking } from "../_lib/actions";
 import SubmitButton from "./SubmitButton";
 
-function ReservationForm({ cabin, user }) {
+function ReservationForm({ cabin }) {
   const { range, resetRange } = useReservation();
   const { maxCapacity, regularPrice, discount, id } = cabin;
 
-  const startDate = range.from;
-  const endDate = range.to;
+  const startDate = range?.from;
+  const endDate = range?.to;
 
-  const numNights = differenceInDays(endDate, startDate);
+  const numNights = startDate && endDate ? differenceInDays(endDate, startDate) : 0;
   const cabinPrice = numNights * (regularPrice - discount);
 
   const bookingData = {
@@ -27,19 +27,8 @@ function ReservationForm({ cabin, user }) {
 
   return (
     <div className="scale-[1.01]">
-      <div className="bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center">
-        <p>Logged in as</p>
-
-        <div className="flex gap-4 items-center">
-          <img
-            // Important to display google profile images
-            referrerPolicy="no-referrer"
-            className="h-8 rounded-full"
-            src={user.image}
-            alt={user.name}
-          />
-          <p>{user.name}</p>
-        </div>
+      <div className="bg-primary-800 text-primary-300 px-16 py-2">
+        <p className="text-xl font-semibold">Reserve Your Stay</p>
       </div>
 
       <form

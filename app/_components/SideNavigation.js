@@ -6,7 +6,6 @@ import {
   HomeIcon,
   UserIcon,
 } from "@heroicons/react/24/solid";
-import SignOutButton from "./SignOutButton";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -46,10 +45,6 @@ function SideNavigation() {
             </Link>
           </li>
         ))}
-
-        <li className="mt-auto">
-          <SignOutButton />
-        </li>
       </ul>
     </nav>
   );

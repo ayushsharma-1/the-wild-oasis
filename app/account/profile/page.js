@@ -1,6 +1,5 @@
 import SelectCountry from "@/app/_components/SelectCountry";
 import UpdateProfileForm from "@/app/_components/UpdateProfileForm";
-import { auth } from "@/app/_lib/auth";
 import { getGuest } from "@/app/_lib/data-service";
 
 export const metadata = {
@@ -8,8 +7,8 @@ export const metadata = {
 };
 
 export default async function Page() {
-  const session = await auth();
-  const guest = await getGuest(session.user.email);
+  // Using default guest ID (no authentication)
+  const guest = await getGuest("john.smith@example.com");
 
   return (
     <div>
